@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*
+   Final Project
+   
+    Style Sheet for Home Page
+   Author: Andreas Brown
+   Date:   10/16/2024
+   
+   Filename: tb_visual1.css
+
+*/
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+   display: block;
+}
+
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+body {
+   line-height: 1;
+}
+
+/*media style rules*/
+
+.container {
+   width: 100%;
+   padding: 10px;
+}
+
+flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   /* Wrap items onto the next line */
+}
+
+flex-item {
+   flex: 1 1 100%;
+}
+
+/* Example of CSS Grid */
+grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Print styles */
+@media print {
+   body {
+      color: black;
+      background: white;
+      margin: 0;
+      padding: 0;
+   }
+
+   iframe {
+      display: none;
+   }
+
+   .aside1 {
+      display: none;
+   }
+
+   .aside2 {
+      display: none;
+   }
+}
